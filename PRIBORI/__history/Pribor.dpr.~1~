@@ -1,0 +1,28 @@
+program AMI;
+
+uses
+  Forms,
+  Unit1 in 'Unit1.pas' {Form1},
+  Unit2 in 'Unit2.pas' {FormSpr},
+  Unit3 in 'Unit3.pas' {DataModule3: TDataModule},
+  Unit4 in 'Unit4.pas' {FormP},
+  Unit5 in 'Unit5.pas' {FormExp},
+  Unit6 in 'Unit6.pas' {FormPov},
+  Unit7 in 'Unit7.pas' {FormRem},
+  Unit8 in 'Unit8.pas' {Form8};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.Title := 'Ó÷¸ò ÑÈèÀ';
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFormSpr, FormSpr);
+  Application.CreateForm(TDataModule3, DataModule3);
+  Application.CreateForm(TFormP, FormP);
+  Application.CreateForm(TFormExp, FormExp);
+  Application.CreateForm(TFormPov, FormPov);
+  Application.CreateForm(TFormRem, FormRem);
+  Application.CreateForm(TForm8, Form8);
+  Application.Run;
+end.
